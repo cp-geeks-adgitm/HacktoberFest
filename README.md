@@ -95,5 +95,7 @@ Please add your name in the list in the following format:
 
 ` - Name - [File Name](File Address)`<br>
 Nikunj Aggarwal - [Binary-search_C++.cpp](Algorithms/Searching/Binary-search_C++.cpp)
-
+Harshit Malhotra - 1.[Insertion-sort_C++.cpp] (Algorithms/Sorting/Insertion-sort_C++.cpp)
+                   2.[DynamicAllocation2DArrays_C++.cpp] (Data-structures/Arrays/DynamicAllocation2DArrays_C++.cpp)
+                   3.[ReverseArray_C++.cpp] (Data-structures/Arrays/ReverseArray_C++.cpp)
 Please do not spam the repository with unnecessary Pull Requests. Happy Hacking!
