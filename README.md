@@ -95,5 +95,7 @@ Please add your name in the list in the following format:
 
 ` - Name - [File Name](File Address)`<br>
 Nikunj Aggarwal - [Binary-search_C++.cpp](Algorithms/Searching/Binary-search_C++.cpp)
+Shadman Afzal - [Binary-tree-traversal_c++.cpp](Data-Structures/Binary-tree-traversal_c++.cpp)
+Shadman Afzal - [Quick-sort_c++.cpp](Algorithms/Sorting/Quick-sort_c++.cpp)
 
 Please do not spam the repository with unnecessary Pull Requests. Happy Hacking!
