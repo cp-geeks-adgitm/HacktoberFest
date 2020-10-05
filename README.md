@@ -96,5 +96,7 @@ Please add your name in the list in the following format:
 ` - Name - [File Name](File Address)`<br>
 Nikunj Aggarwal - [Binary-search_C++.cpp](Algorithms/Searching/Binary-search_C++.cpp)  
 [Priyank Rastogi](https://github.com/Priyankcoder/) - [standard-template-library](standard-template-library)
+[rosy-02](https://github.com/rosy-02) - [Remove covered intervals.cpp](https://github.com/cp-geeks-adgitm/Hacktoberfest/pull/66)
+
 
 Please do not spam the repository with unnecessary Pull Requests. Happy Hacking!
