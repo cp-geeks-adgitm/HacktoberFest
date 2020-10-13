@@ -100,6 +100,7 @@ Please add your name in the list in the following format:
 Nikunj Aggarwal - [Binary-search_C++.cpp](Algorithms/Searching/Binary-search_C++.cpp)  
 [Priyank Rastogi](https://github.com/Priyankcoder/) - [standard-template-library](standard-template-library)  
 Rishabh Jain : [Kadanes-Algorithm_C++.cpp , Unique-no-from-pairs-by-XOR_C++.cpp , Counting-Sort_C++.cpp , 21-Merge-Two-Sorted-Lists_C++.cpp , 96-Unique-Binary-Search-Trees_C++.cpp]()
+Shubham Goel - [Graph-BFS-Traversal_C++](Algorithms/Graph-BFS-Traversal_C++.cpp)
 
 
 
