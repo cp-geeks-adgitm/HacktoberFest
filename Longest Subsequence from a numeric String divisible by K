@@ -1,0 +1,79 @@
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// Function to if the integer representation 
+// of the current string is divisible by K 
+bool isdivisible(string& newstr, long long K) 
+{ 
+    // Stores the integer 
+    // representation of the string 
+    long long num = 0; 
+  
+    for (int i = 0; i < newstr.size(); i++) { 
+        num = num * 10 + newstr[i] - '0'; 
+    } 
+  
+    // Check if the num is 
+    // divisible by K 
+    if (num % K == 0) 
+        return true; 
+  
+    else
+        return false; 
+} 
+  
+// Function to find the longest subsequence 
+// which is divisible by K 
+void findLargestNo(string& str, string& newstr, 
+                   string& ans, int index, 
+                   long long K) 
+{ 
+  
+    if (index == (int)str.length()) { 
+  
+        // If the number is divisible by K 
+        if (isdivisible(newstr, K)) { 
+  
+            // If current number is the 
+            // maximum obtained so far 
+            if ((ans < newstr 
+                 && ans.length() == newstr.length()) 
+                || newstr.length() > ans.length()) { 
+                ans = newstr; 
+            } 
+        } 
+  
+        return; 
+    } 
+  
+    string x = newstr + str[index]; 
+  
+    // Include the digit at current index 
+    findLargestNo(str, x, ans, index + 1, K); 
+  
+    // Exclude the digit at current index 
+    findLargestNo(str, newstr, ans, index + 1, K); 
+} 
+  
+// Driver Code 
+int main() 
+{ 
+  
+    string str = "121400"; 
+  
+    string ans = "", newstr = ""; 
+  
+    long long K = 8; 
+  
+    findLargestNo(str, newstr, ans, 0, K); 
+  
+    // Printing the largest number 
+    // which is divisible by K 
+    if (ans != "") 
+        cout << ans << endl; 
+  
+    // If no number is found 
+    // to be divisible by K 
+    else
+        cout << -1 << endl; 
+}
