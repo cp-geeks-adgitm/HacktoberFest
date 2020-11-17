@@ -20,19 +20,18 @@ Constraints:
 
 //SOLUTION
 
- bool isPalindrome(string s) {
-        if(s.length() <= 1) return true;
-        int start = 0, end= s.length()-1;
-        while(start<end){
-            //isalnum() is used to check if a char is alpha numeric.
-            //Increment till we encounter an alpha numeric character
-            while(start< end && !isalnum(s[start])) start++; //left side
-            while(start< end && !isalnum(s[end])) end--; //right side
-
-            if(start<end && tolower(s[start]) != tolower(s[end])) return false;
-            start++;    
-            end--;
-            
+  bool isPalindrome(string s) {
+        string str="";
+        for(int i=0;i<s.length();i++)
+        {
+            s[i]=tolower(s[i]);
+            if(s[i]>='0' && s[i]<='9'||s[i]>='a' && s[i]<='z')
+            str+=s[i];
         }
-        return true;
+    int i=0,j=str.length()-1;
+    while(i<=j){
+        if(str[i++]!=str[j--])
+            return false;
+    }
+    return true;
     }
