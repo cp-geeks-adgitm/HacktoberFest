@@ -22,15 +22,31 @@ void postorder(struct Node* node)
     cout<<node->data<<" ";
 }
 
-void inorder(struct Node* node)
-{
-
-    if(node==NULL)
-        return;
-    inorder(node->left);
-    cout<<node->data<<" ";
-    inorder(node->right);
-}
+void inorder(struct Node* root) {
+    struct Node* curr=root;
+        while(curr!=nullptr){
+            if(curr->left==nullptr){
+               cout<<curr->data<<" ";
+                curr=curr->right;
+            }
+            else{                            
+               struct Node* temp=curr->left;
+             while(temp->right!=nullptr && temp->right!=curr){
+                    temp=temp->right;
+                }
+                if(temp->right==nullptr){
+                    temp->right=curr;
+                    curr=curr->left;
+                }
+                else if(temp->right==curr){
+                    cout<<curr->data<<" ";
+                    curr=curr->right;
+                    temp->right=nullptr;
+               }
+            }
+        }
+            return arr;
+    }
 
 void preorder(struct Node* node)
 {
