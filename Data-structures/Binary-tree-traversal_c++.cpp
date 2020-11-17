@@ -32,14 +32,32 @@ void inorder(struct Node* node)
     inorder(node->right);
 }
 
-void preorder(struct Node* node)
-{
-    if(node==NULL)
-        return;
-    cout<<node->data<<" ";
-    preorder(node->left);
-    preorder(node->right);
-}
+void preorderTraversal(struct Node* root) {
+      
+    struct Node* curr=root;
+        while(curr!=nullptr){
+            if(curr->left==nullptr){
+                cout<<curr->data<<" ";
+                curr=curr->right;
+            }
+            else{                            
+                struct Node* temp=curr->left;
+             while(temp->right!=nullptr && temp->right!=curr){
+                    temp=temp->right;
+                }
+                if(temp->right==nullptr){
+                      cout<<curr->data<<" ";
+                    temp->right=curr;
+                    curr=curr->left;
+                }
+                else if(temp->right==curr){
+                    curr=curr->right;
+                    temp->right=nullptr;
+               }
+            }
+        }
+            
+    }
 
 int main()
 {
