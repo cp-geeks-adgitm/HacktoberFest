@@ -18,10 +18,8 @@ void reversearray(int a[],int n)
     while(i<j)
     {
         temp=a[i];
-        a[i]=a[j];
-        a[j]=temp;
-        i++;
-        j--;
+        a[i++]=a[j];
+        a[j--]=temp;
     }
 }
 int main()
