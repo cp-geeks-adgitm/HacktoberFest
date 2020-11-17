@@ -21,16 +21,14 @@ Output: False
 Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters. */
 
 //SOLUTION
-
  bool detectCapitalUse(string word) {
-        int n = word.length();
-        if(n== 1) return true;
-        if(isupper(word[0]) && isupper(word[1])){
-            for(int i = 2; i<n ; ++i)
-                if(islower(word[i])) return false;
-        }else{
-            for(int i = 1; i< n; ++i)
-                if(isupper(word[i])) return false;
+        int count=0;
+        for(int i=0;i<word.length();i++){
+            if(word[i]-'A'<=27 && word[i]-'A'>=0){
+                count++;
+            }
         }
-        return true;
+        if(count==word.length()||count==0||count==1 && word[0]-'A'<=27 && word[0]-'A'>=0)
+            return true;
+        return false;
     }
