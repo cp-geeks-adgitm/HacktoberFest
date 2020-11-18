@@ -1,0 +1,6 @@
+This is a simple quiz app which is developed using Kotlin on Android Studio. This app has a CountDownTimer to check the total time of the quiz that the user has attempted and it also tells you the score at the end of the quiz. The freshers can use this app as a reference to develop a more complex quiz app with many more functionalities if needed.
+
+I am also attaching the images of the app in this folder.
+
+Made by - Kaustubh Shrivastava 
+	  @kaustubh0201

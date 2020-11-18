@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="p_name">Kaustubh Shrivasxtava\n@kaustubh0201</string>
+    <string name="instuctions">
+        The instructions are as follows: \n \n
+        1. There are a total of six questions in the quiz. \n \n
+        2. The questions are totally based on current affairs. \n \n
+        3. In order to go to next question, you have to select something from the options. \n \n
+        4. There is a time limit of 45 seconds on each question. \n \n
+        5. If you don\'t select anything and the time runs out, nothing will be selected and you will move to next question.\n \n
+
+        Hope you enjoy the quiz !! :)
+
+    </string>
+    <string name="question">Question </string>
+    <string name="praise">Well Done!! </string>
+    <string name="your_score">Your Score: </string>
+    <string name="time">Total Time Taken: </string>
+</resources>
