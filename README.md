@@ -93,6 +93,12 @@ Some important commands that you are going to need are listed below:
 ## Contributors
 Please add your name in the list in the following format:
 
-` - Name - [File Name](File Address)`
+   
+ ` - Name`  <br>
+-[Nikunj Aggarwal](https://github.com/Nikunj-Aggarwal/)  
+-[Priyank Rastogi](https://github.com/Priyankcoder/)  
+-Rishabh Jain 
+
+
 
 Please do not spam the repository with unnecessary Pull Requests. Happy Hacking!
